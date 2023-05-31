@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(102, 102, 140);
+    text-align: center;
+    color: green;
+    font-size: 25px;
+    border: 2px solid;
+    border-radius: 5px;
+  }
+  /* Header/logo Title */
+  .header {
+    padding: 0px;
+    text-align: center;
+    background: #6489cf;
+    color: white;
+  }
+  
+  /* Increase the font size of the heading */
+  .header h1 {
+    font-size: 40px;
+  }
+  
+  .mypic {
+    float: left;
+  }
+  
+  div.a {
+    text-align: left;
+    color: white;
+  }
+  
+  div.b {
+    text-align: left;
+    color: white;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 0px;
+    text-align: center;
+    font-size: 25px;
+    background: #6489cf;
+  }
+  
