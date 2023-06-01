@@ -1,7 +1,59 @@
 <html>
-    <head>
-        <title>
-            <h1> Swathi Surikanti</h1>
-        </title>
-    </head>
+  <title>Swathi Surikanti</title>
+  <style>
+    img {
+      border-radius: 50%;
+    }
+    body {
+      background-color: rgb(102, 102, 140);
+    }
+  </style>
+  <body>
+    <h1>Swathi Surikanti</h1>
+    <h2>Profile Picture</h2>
+    <div>
+      <img
+        class="mypic"
+        src="D:\Swathi Masters\OPT\Swathi Passphoto.jpg"
+        alt="myphoto"
+        width="250"
+        height="250"
+      />
+    </div>
+  </body>
+  <script>
+    var profile = {
+      firstName: "Swathi",
+      lastName: "Surikanti",
+      dob: "07-15-1999",
+      gender: "Female",
+      contact: 9407582715,
+      email: "swathisurikanti5@gmail.com",
+      education: [{ Undergraduate: "CSE", Graduate: "CS" }],
+      address: "Denton,Texas",
+      hobbies: [
+        {
+          h1: "reading",
+          h2: "cooking",
+          h3: "singing",
+          h4: "dancing",
+          h5: "gardening",
+          h6: "swimming",
+          OutdoorGames: [{ og1: "throwball", og2: "volleyball" }],
+          indoorGames: [{ ig1: "chess", ig2: "teenpati" }],
+          h9: "pencilArt",
+        },
+      ],
+      skills: [
+        {
+          s1: "C",
+          s2: "Java",
+          s3: "javascript",
+          s4: "python",
+        },
+      ],
+    };
+    console.log(profile);
+    console.log(profile.hobbies[0].h9);
+  </script>
 </html>
