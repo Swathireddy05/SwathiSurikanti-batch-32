@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    Environment: <input type="text" id="Number" value="dev" />
+
+    <p>Click the button to display the number of the number field.</p>
+    <button onclick="myFunction()">SUBMIT</button>
+    <p id="demo"></p>
+
+    <script>
+      var environment;
+      function myFunction() {
+        environment = document.getElementById("Number").value;
+        document.getElementById("demo").innerHTML = environment;
+        console.log(environment);
+
+        //using if-else statements
+        let sendamount;
+        amount = 100;
+        if (environment == "dev") {
+          sendamount = amount + amount * 0.1;
+        } else if (environment == "Test") {
+          sendamount = amount + amount * 0.2;
+        } else if (environment == "Stage") {
+          sendamount = amount + amount * 0.3;
+        } else if (environment == "Prod") {
+          sendamount = amount + amount * 0.05;
+        } else {
+          //console.log("send the perfect amount");
+        }
+        console.log(sendamount);
+      }
+    </script>
+  </body>
+</html>
