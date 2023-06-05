@@ -5,11 +5,12 @@
     <h2>Hobbies</h2>
   </head>
   <body>
+    <!--button to get the hobbies-->
     <div id="hobbylist">
       <button type="button" onclick="gethobbies()">Hobbies</button>
     </div>
     <br /><br />
-
+    <!--button to add the hobby-->
     <div id="newhobby">
       <!--<input type="text" id="addHobby" />-->
 
@@ -19,6 +20,7 @@
       <p id="Add"></p>
     </div>
     <br /><br />
+    <!--button to delete the hobby-->
     <div id="deletehobby">
       <button type="button" onclick="removehobby()">Delete Hobby</button>
     </div>
@@ -27,7 +29,9 @@
     </div>
 
     <script>
+      //initialising the array list
       let hobbies = ["Reading", "Cooking", "PencilArt", "Dancing"];
+      //function to display the hobbies
       function gethobbies() {
         console.log(hobbies);
         document.getElementById("hobbylist").innerHTML = hobbies;
