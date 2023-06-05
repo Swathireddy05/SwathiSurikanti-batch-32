@@ -1,1 +1,90 @@
-hi
+<html>
+  <title>Swathi Surikanti</title>
+  <head>
+    <h1>Swathi Surikanti</h1>
+    <h2>Hobbies</h2>
+  </head>
+  <body>
+    <div id="hobbylist">
+      <button type="button" onclick="gethobbies()">Hobbies</button>
+    </div>
+    <br /><br />
+
+    <div id="newhobby">
+      <!--<input type="text" id="addHobby" />-->
+
+      <button type="button" onclick="addhobby()">Add Hobby</button>
+    </div>
+    <div>
+      <p id="Add"></p>
+    </div>
+    <br /><br />
+    <div id="deletehobby">
+      <button type="button" onclick="removehobby()">Delete Hobby</button>
+    </div>
+    <div>
+      <p id="Add1"></p>
+    </div>
+
+    <script>
+      let hobbies = ["Reading", "Cooking", "PencilArt", "Dancing"];
+      function gethobbies() {
+        console.log(hobbies);
+        document.getElementById("hobbylist").innerHTML = hobbies;
+        //return hobbies;
+      }
+
+      //add hobby
+      function addhobby() {
+        let hobby = prompt("Enter hobby");
+        if (hobby != null) {
+          hobbies.push(hobby);
+          console.log(hobbies);
+          // gethobbies();
+        }
+        document.getElementById("Add").innerHTML = hobbies;
+
+        /*let h = document.getElementById("addHobby").value;
+        hobbies.push(h);
+        document.getElementById("Add").innerHTML = hobbies;*/
+      }
+
+      //remove hobby
+      function removehobby() {
+        let deletehobby = prompt("Delete hobby");
+        if (deletehobby != null) {
+          hobbies.splice(hobbies.indexOf(deletehobby), 1);
+          console.log(hobbies);
+        }
+        document.getElementById("Add1").innerHTML = hobbies;
+      }
+
+      /*
+      let hobbies = ["Reading", "Cooking", "PencilArt", "Dancing"];
+      //display the hobbies
+      function gethobbies() {
+        return hobbies;
+      }
+      //add hobby
+      function newhobby() {
+        hobbies.push("Singing");
+        return hobbies;
+      }
+      //remove hobby
+      function removehobby() {
+        for (let i = 0; i <= hobbies.length; i++) {
+          if (hobbies[i] == "Singing") {
+            hobbies.splice(i, 1);
+            return hobbies;
+          }
+        }
+      }
+      //return hobbies;
+
+      console.log(gethobbies());
+      console.log(newhobby());
+      console.log(removehobby());
+      */
+    </script>
+  </body>
+</html>
