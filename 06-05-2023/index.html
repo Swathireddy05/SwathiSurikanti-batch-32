@@ -4,6 +4,46 @@
     <head>
       <h1>Swathi Surikanti</h1>
     </head>
-    <script></script>
+    <body>
+      <h2>Profile Details</h2>
+
+      First Name:<input type="text" id="fName" value="" /> <br /><br />
+      Last Name:<input type="text" id="lName" value="" /> <br /><br />
+      Date Of Birth:<input type="text" id="dob" value="" /> <br /><br />
+      Gender:<input type="text" id="gender" value="" /><br /><br />
+      Email:<input type="text" id="email" value="" /> <br /><br />
+      Phone Number :<input type="text" id="phone" value="" /><br /><br />
+      <button onclick="profileDetails()">SUBMIT</button><br /><br />
+
+      <p id="pdetails"></p>
+    </body>
+    <script>
+      function profileDetails() {
+        var firstName = document.getElementById("fName").value;
+        var lastName = document.getElementById("lName").value;
+        var dob = document.getElementById("dob").value;
+        var gender = document.getElementById("gender").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        document.getElementById("pdetails").innerHTML =
+          "First Name: " +
+          firstName +
+          "</br>" +
+          "Last Name: " +
+          lastName +
+          "</br>" +
+          "Date Of Birth: " +
+          dob +
+          "</br>" +
+          "Gender: " +
+          gender +
+          "</br>" +
+          "Email: " +
+          email +
+          "</br>" +
+          "Phone Number: " +
+          phone;
+      }
+    </script>
   </html>
 </html>
