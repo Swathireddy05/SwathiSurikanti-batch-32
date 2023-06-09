@@ -6,6 +6,12 @@
     <h1>Swathi Surikanti</h1>
   </body>
   <script>
-   
+    var p = [4, 8, 2, 9, 3, 33, -1, -7];
+
+    Object.prototype.sortsecondNo = function () {
+      p.sort();
+      return p[1];
+    };
+    console.log(p.sortsecondNo());
   </script>
 </html>
