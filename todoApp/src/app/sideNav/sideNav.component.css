@@ -3,12 +3,14 @@
   overflow: hidden;
   background-color: #333;
   float: left;
+  margin: 0;
 }
 
 .sidenavbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 25%;
 }
 
 /* Style the sidenavigation bar links */
@@ -21,9 +23,7 @@
   text-decoration: none;
 }
 
-.sidenavbar a.right {
-  float: right;
-}
+
 /* Change color on hover */
 .sidenavbar a:hover {
   background-color: #a353b4;
