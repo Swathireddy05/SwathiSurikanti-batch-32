@@ -1,0 +1,39 @@
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #b2d296;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #a353b4;
+}
+
+.navbar .search-container {
+  float: right;
+  padding: 4px;
+}
+
+.navbar input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.navbar .search-container button:hover {
+  background: #ccc;
+}

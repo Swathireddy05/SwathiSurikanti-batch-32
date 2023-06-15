@@ -1,0 +1,30 @@
+/* Style the side navigation bar */
+.sidenavbar {
+  overflow: hidden;
+  background-color: #333;
+  float: left;
+}
+
+.sidenavbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the sidenavigation bar links */
+.sidenavbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.sidenavbar a.right {
+  float: right;
+}
+/* Change color on hover */
+.sidenavbar a:hover {
+  background-color: #a353b4;
+}
