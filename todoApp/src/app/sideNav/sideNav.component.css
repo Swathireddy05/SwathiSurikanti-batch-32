@@ -1,30 +1,22 @@
-/* Style the side navigation bar */
-.sidenavbar {
+body {
+  width: 20%;
+
+  height: 100%;
+}
+.sidenav {
   overflow: hidden;
-  background-color: #333;
-  float: left;
-  margin: 0;
+
+  padding: 10px;
+  margin: 0px;
 }
 
-.sidenavbar ul {
+.sidenav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  width: 25%;
-}
+  padding: 20px 20px;
 
-/* Style the sidenavigation bar links */
-.sidenavbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-
-/* Change color on hover */
-.sidenavbar a:hover {
-  background-color: #a353b4;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }

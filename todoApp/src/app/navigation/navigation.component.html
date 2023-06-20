@@ -1,13 +1,19 @@
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-/>
-<div class="navbar">
-  <a href="#">Profile</a>
-  <a href="#">Contact</a>
-  <a (click)="toggleLogin()">{{ loginText }}</a>
-  <div class="search-container">
-    <input type="text" placeholder="Search...." name="search" />
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </div>
-</div>
+<html>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <div class="navbar">
+      <a routerLink="/profile">Profile</a>
+      <a>Contact</a>
+      <a (click)="toggleLogin()" routerLink="/login">{{ loginText }}</a>
+      <a routerLink="/signup">SignUp</a>
+      <div class="search-container">
+        <input type="text" placeholder="Search...." name="search" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </div>
+    </div>
+  </body>
+  <router-outlet></router-outlet>
+</html>

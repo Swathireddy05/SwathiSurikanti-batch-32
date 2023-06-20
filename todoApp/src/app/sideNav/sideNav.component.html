@@ -1,9 +1,18 @@
-<div class="sidenavbar">
+<html>
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav class="sidenav">
   <ul>
-    <li><a href="#">Profile</a></li>
-    <li><a href="#">Contact</a></li>
-    <li>
-      <a (click)="toggleLogin1()">{{ loginText1 }}</a>
-    </li>
+    <li>Profile</li><br>
+    <li>Contact</li><br>
+    
+   
+    <li (click)="toggleLogin()">{{loginText}}</li>
+    
+   
   </ul>
-</div>
+</nav>
+<router-outlet></router-outlet>
+</body>
+
+</html>

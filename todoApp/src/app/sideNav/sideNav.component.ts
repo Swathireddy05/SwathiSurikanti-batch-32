@@ -11,14 +11,16 @@ export class SideNavComponent implements OnInit {
 
   ngOnInit() {
   }
-  loginText1: string = 'Login';
 
-  toggleLogin1() {
-    if (this.loginText1 === 'Login') {
-      this.loginText1 = 'Logout';
-    } else {
-      this.loginText1 = 'Login';
-    }
+  loginText:string='Login';
+  
+  toggleLogin(){
+     if(this.loginText==='Login'){
+      this.loginText='Logout';
+     }else{
+      this.loginText='Login';
+     }
+  }
 
 }
-}
+
